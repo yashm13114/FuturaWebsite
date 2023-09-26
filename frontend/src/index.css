@@ -9,3 +9,7 @@
         -webkit-text-stroke: 4px black;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

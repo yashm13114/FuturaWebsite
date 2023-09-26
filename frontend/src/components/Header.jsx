@@ -5,8 +5,8 @@ import {
     Ripple,
     initTE,
 } from "tw-elements";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { Carousel, IconButton } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
+import { Link } from 'react-router-dom';
 import Clients from './Clients';
 
 const Header = () => {
@@ -160,7 +160,8 @@ const Header = () => {
 
             </div>
             <div className='flex justify-center'>
-                <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '>More..</button>
+                {/* <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '><a href='/Services'>More..</a></button> */}
+                <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '><Link to='/Services'>More..</Link></button>
 
             </div>
             {/* clients */}
@@ -168,16 +169,23 @@ const Header = () => {
 
             {/* About Us */}
             <h1 className='grid justify-center text-6xl font-bold'> About Us</h1>
-            <div className='flex justify-center pl-24 pr-24 mt-10 '>
-                <p className='text-2xl mr-5'>At Futura Technologies, our passion lies in pioneering cutting-edge solutions for the process, industrial, and manufacturing realms. We specialize in delivering tailored expertise, innovative products, and value-added services that empower our clients to flourish, ensuring both profitability and sustainability. Welcome to a future of limitless possibilities.</p>
-                <img src="https://www.futuradx.com/wp-content/uploads/2020/10/Futura.png" className='h-64 w-2/4' alt="" />
+            <div className='lg:flex inline-block justify-center pl-24 pr-24 mt-10 '>
+                <p className='text-2xl mr-5 '>At Futura Technologies, our passion lies in pioneering cutting-edge solutions for the process, industrial, and manufacturing realms. We specialize in delivering tailored expertise, innovative products, and value-added services that empower our clients to flourish, ensuring both profitability and sustainability. Welcome to a future of limitless possibilities.</p>
+                <img src="https://www.futuradx.com/wp-content/uploads/2020/10/Futura.png" className='lg:h-44 h-44 lg:w-2/4 w-full' alt="" />
             </div>
             <div className='flex justify-center'>
 
                 <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '>More..</button>
 
 
-            </div>
+            </div><br /><br />
+
+
+
+
+
+
+          
 
 
         </>
