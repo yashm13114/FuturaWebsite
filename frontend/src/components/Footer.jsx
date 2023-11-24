@@ -5,7 +5,7 @@ const Footer = () => {
         <>
 
             <footer
-                className=" text-center text-white bg-blue-400 dark:text-neutral-200 lg:text-left">
+                className=" text-center text-white bg-gradient-to-r from-blue-400  to-sky-400 dark:text-neutral-200 lg:text-left">
                 <div
                     className="flex items-center justify-center border-b-2 border-white p-6  lg:justify-between">
                     <div className="mr-12 hidden lg:block">
@@ -221,7 +221,7 @@ const Footer = () => {
                 <hr className='text-white' />
 
 
-                <div className="bg-blue-400 p-6 text-center">
+                <div className=" p-6 text-center">
                     <span className='font-bold'>© 2023 Copyright: Futura</span>
                        
 

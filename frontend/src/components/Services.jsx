@@ -1,10 +1,12 @@
 import React from 'react'
 import Footer from './Footer'
+import Navbar from './Navbar'
 
 const Services = () => {
     return (
         <>
-            <div className='mt-32 mb-32'>
+        <Navbar />
+            <div className='mt-10 mb-32'>
                 <h1 className='grid justify-center text-6xl font-bold'>Services</h1>
                 <div className="grid-cols-1 sm:grid md:grid-cols-3 pl-14 pr-14">
                     <div

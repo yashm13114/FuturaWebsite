@@ -5,28 +5,28 @@ import {
     Ripple,
     initTE,
 } from "tw-elements";
-import { Carousel } from "@material-tailwind/react";
 import { Link } from 'react-router-dom';
 import Clients from './Clients';
+import Navbar from './Navbar';
 
 const Header = () => {
     initTE({ Ripple });
 
     return (
         <>
-            <div className=" lg:ml-0 ml-24 justify-evenly  container my-52 mx-auto md:px-6 mr-7">
-
+            <section className=''>
+                <Navbar />
                 <div>
 
-                    {/* <p className='w-11/12 text-2xl'>
-                        Futura Technologies was eastablished only to research, develop and build the state of art technologies which will affect and enhance the manufacturers facility reliability, EHS Sustainability, performance, better operation and maintenance and impact the ovrall life cycle of the installation. <br/>
-                        As you see, these are the key performance objective of any manufacturer or owner operator of a facility and any impact we create by developing a solution affecting these areas, there is value for money we can create.
-                    </p> */}
-                    <p className='lg:text-8xl grid justify-center text-6xl font-bold text-white font-sans font-outline-2 outline-white text-opacity-25'>Unlocking Water Potential</p>
-                    <p className='text-white flex justify-center text-8xl font-bold font-sans font-outline-2 outline-white text-opacity-25'>With Futura</p>
+
+                    <div className='header '>
+                        <p className='lg:pr-0 lg:pl-0 pl-10 pr-10  lg:text-8xl grid justify-center text-6xl font-bold text-white font-sans font-outline-2 outline-white text-opacity-25'>Unlocking Water Potential </p>
+                        <p className='lg:text-8xl text-white flex justify-center text-6xl font-bold font-sans font-outline-2 outline-white text-opacity-25'>With Futura</p>
+                    </div>
+
                     {/* <img  src="https://static.vecteezy.com/system/resources/previews/014/606/237/original/blue-water-wave-line-icon-in-the-sea-free-png.png" className='flex justify-center h-24 w-60'/> */}
-                    <p className='text-4xl mt-3 grid justify-center '>Your search for High COD Effluent Treatment ends here..</p>
-                    <div className='flex justify-center'>
+                    <p className=' lg:text-4xl text-2xl lg:pl-0 pl-5  mt-3 grid justify-center '>Your search for High COD Effluent Treatment ends here..</p>
+                    <div className=' flex justify-center'>
                         <button className='font-bold rounded-full p-4 mt-5 font-sans hover:text-white border-2 hover:bg-transparent bg-white text-blue-400 mr-4'>Contact Us</button>
                         <button className='font-bold rounded-full p-4 mt-5 font-sans text-white border-2  border-white hover:bg-white hover:text-blue-400'>Explore more</button>
 
@@ -37,133 +37,91 @@ const Header = () => {
 
 
                 </div>
-                {/* <div className='lg:w-9/12 w-4/5'>
-                    <img src="https://www.workandjam.com/foto/n12.jpg" className='w-full' alt="" />
-                </div> */}
+                <div className="wave wave1">
 
-            </div>
+                </div>
+                <div className="wave wave"></div>
+                <div className="wave wave3"></div>
+                <div className="wave wave4"></div>
+            </section>
+            
             {/* services */}
-            <h1 className='grid justify-center text-6xl font-bold'>Services</h1>
-            <div className="grid-cols-1 sm:grid md:grid-cols-3 pl-14 pr-14">
-                <div
-                    className=" bg-transparent mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img
-                            className="rounded-t-lg"
-                            src="https://aosts.com/wp-content/uploads/2019/03/raw-water-treatment-1.jpg"
-                            alt="Hollywood Sign on The Hill" />
-                    </a>
-                    <div className="p-6">
-                        <h5
-                            className="mb-2 text-xl font-medium leading-tight text-black">
-                            Raw Water Treatment
-                        </h5>
-                        <p className="mb-4 text-base text-black">
-                            Optimize water quality with efficient raw water treatment solutions.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img
-                            className="h-72 w-full rounded-t-lg"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKXFzt5h_7XLppPgO5GlALK22uTqkS5tzPTQ&usqp=CAU"
-                            alt="Palm Springs Road" />
-                    </a>
-                    <div className="p-6">
-                        <h5
-                            className="mb-2 text-xl font-medium leading-tight text-black">
-                            Utility Water Treatment
-                        </h5>
-                        <p className="mb-4 text-base text-black">
-                            Advanced treatment for essential water quality – Utility Water Treatment solutions.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img
-                            className="h-72 w-full rounded-t-lg"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVocIx_pkuZijR9meEDZPo92NYH3mswemy1Q&usqp=CAU"
-                            alt="Skyscrapers" />
-                    </a>
-                    <div className="p-6">
-                        <h5
-                            className="mb-2 text-xl font-medium leading-tight text-black">
-                            Effluent Water Treatment
-                        </h5>
-                        <p className="mb-4 text-base text-black">
-                            Effluent Water Treatment: Sustainable solutions for cleaner, safer water disposal.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img
-                            className="h-72 w-full rounded-t-lg"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBIxbAT5MQsNevdJz71qQrZZTH_AyqNOmsg&usqp=CAU"
-                            alt="Los Angeles Skyscrapers" />
-                    </a>
-                    <div className="p-6">
-                        <h5
-                            className="mb-2 text-xl font-medium leading-tight text-black">
-                            ZLD Solutions
-                        </h5>
-                        <p className="mb-4 text-base text-black">
-                            Zero liquid discharge (ZLD) is a strategic wastewater management system that ensures that there will be no discharge of industrial wastewater into the environment.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img
-                            className="rounded-t-lg"
-                            src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
-                            alt="Los Angeles Skyscrapers" />
-                    </a>
-                    <div className="p-6">
-                        <h5
-                            className="mb-2 text-xl font-medium leading-tight text-black">
-                            Dewatering Screw Press
+            <div className='service ml-10 mr-10 rounded-xl pt-5 mb-10'>
 
-                        </h5>
-                        <p className="mb-4 text-base text-black">
-                            A dewatering screw press is a screw press that separates liquids from solids. A screw press can be used in place of a belt press, centrifuge, or filter paper. It is a simple, slow moving device that accomplishes dewatering by continuous gravitational drainage. Screw presses are often used for materials that are difficult to press, for example those that tend to pack together.
-                        </p>
+                <h1 className='grid justify-center text-7xl font-bold pt-5 text-white font-sans font-outline-2 outline-white text-opacity-25'>Services</h1>
+
+                <div className="lg:pl-0 pl-10 lg:pr-0 pr-10 py-4 lg:flex md:flex lg:justify-evenly inline-block">
+                    <div className="pb-10 shadow-lg group container  rounded-md bg-white  max-w-sm flex justify-center items-center   content-div">
+                        <div>
+                            <div className="w-full image-cover rounded-t-md" >
+                                <div className="p-2 m-4 w-16 h-16 text-center bg-gray-700 rounded-full text-white float-right fd-cl group-hover:opacity-25">
+                                    <span className="text-base tracking-wide  font-bold border-b border-white font-sans"> 12</span>
+                                    <span className="text-xs tracking-wide font-bold uppercase block font-sans">April</span>
+                                </div>
+                            </div>
+                            <div className="py-4 px-4 bg-white  rounded-md fd-cl group-hover:opacity-25">
+                                <span className="block text-lg text-gray-800 font-bold tracking-wide">Raw Water Treatment</span>
+                                <span className="block text-gray-600 text-sm">see more
+                                </span>
+                            </div>
+                        </div>
+                        <div className="absolute opacity-0 fd-sh group-hover:opacity-100">
+                            <span className="text-md overflow-hidden w-1/5 font-bold text-white tracking-wider leading-relaxed font-sans">Optimize water quality with efficient raw <br /> water treatment solutions.</span>
+                         
+                        </div>
                     </div>
-                </div>
-                <div
-                    className="mx-3 mt-6 flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] sm:shrink-0 sm:grow sm:basis-0">
-                    <a href="#!">
-                        <img
-                            className="rounded-t-lg"
-                            src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
-                            alt="Los Angeles Skyscrapers" />
-                    </a>
-                    <div className="p-6">
-                        <h5
-                            className="mb-2 text-xl font-medium leading-tight text-black">
-                            Card title
-                        </h5>
-                        <p className="mb-4 text-base text-black">
-                            This is a longer card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit
-                            longer.
-                        </p>
+                    <div className="pb-10 lg:pl-0 lg:pr-0 pr-14 pl-14  lg:mt-0 mt-10 shadow-lg group container  rounded-md bg-white  max-w-sm flex justify-center items-center  content-div">
+                        <div>
+                            <div className="w-full image-cover rounded-t-md" >
+                                <div className="p-2 m-4 w-16 h-16 text-center bg-gray-700 rounded-full text-white float-right fd-cl group-hover:opacity-25">
+                                    <span className="text-base tracking-wide  font-bold border-b border-white font-sans"> 12</span>
+                                    <span className="text-xs tracking-wide font-bold uppercase block font-sans">April</span>
+                                </div>
+                            </div>
+                            <div className="py-4 px-4 bg-white  rounded-md fd-cl group-hover:opacity-25">
+                                <span className="block text-lg text-gray-800 font-bold tracking-wide">Raw Water Treatment</span>
+                                <span className="block text-gray-600 text-sm">see more
+                                </span>
+                            </div>
+                        </div>
+                        <div className="absolute opacity-0 fd-sh group-hover:opacity-100">
+                            <span className="text-md overflow-hidden w-1/5 font-bold text-white tracking-wider leading-relaxed font-sans">Optimize water quality with efficient raw <br /> water treatment solutions.</span>
+                         
+                        </div>
                     </div>
+                    <div className="pb-10 lg:pl-0 lg:pr-0 pr-14 pl-14  lg:mt-0 mt-10 shadow-lg group container  rounded-md bg-white  max-w-sm flex justify-center items-center  content-div">
+                        <div>
+                            <div className="w-full image-cover rounded-t-md" >
+                                <div className="p-2 m-4 w-16 h-16 text-center bg-gray-700 rounded-full text-white float-right fd-cl group-hover:opacity-25">
+                                    <span className="text-base tracking-wide  font-bold border-b border-white font-sans"> 12</span>
+                                    <span className="text-xs tracking-wide font-bold uppercase block font-sans">April</span>
+                                </div>
+                            </div>
+                            <div className="py-4 px-4 bg-white  rounded-md fd-cl group-hover:opacity-25">
+                                <span className="block text-lg text-gray-800 font-bold tracking-wide">Raw Water Treatment</span>
+                                <span className="block text-gray-600 text-sm">see more
+                                </span>
+                            </div>
+                        </div>
+                        <div className="absolute opacity-0 fd-sh group-hover:opacity-100">
+                            <span className="text-md overflow-hidden w-1/5 font-bold text-white tracking-wider leading-relaxed font-sans">Optimize water quality with efficient raw <br /> water treatment solutions.</span>
+                         
+                        </div>
+                    </div>
+                    
+                    
+
                 </div>
 
+        
+                <div className='flex justify-center'>
+                    {/* <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '><a href='/Services'>More..</a></button> */}
+                    <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '><Link to='/Services'>More..</Link></button>
+
+                </div>
 
             </div>
-            <div className='flex justify-center'>
-                {/* <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '><a href='/Services'>More..</a></button> */}
-                <button className='bg-transparent border-2 mt-5 pt-3 pb-3 pl-10 pr-10 rounded-full mb-10 text-white border-white  hover:bg-white hover:text-blue-400 '><Link to='/Services'>More..</Link></button>
 
-            </div>
             {/* clients */}
             <Clients />
 
@@ -171,7 +129,7 @@ const Header = () => {
             <h1 className='grid justify-center text-6xl font-bold'> About Us</h1>
             <div className='lg:flex inline-block justify-center pl-24 pr-24 mt-10 '>
                 <p className='text-2xl mr-5 '>At Futura Technologies, our passion lies in pioneering cutting-edge solutions for the process, industrial, and manufacturing realms. We specialize in delivering tailored expertise, innovative products, and value-added services that empower our clients to flourish, ensuring both profitability and sustainability. Welcome to a future of limitless possibilities.</p>
-                <img src="https://www.futuradx.com/wp-content/uploads/2020/10/Futura.png" className='lg:h-44 h-44 lg:w-2/4 w-full' alt="" />
+                <img src="https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-12859.jpg" className='lg:h-64 h-44 lg:w-96 w-full' alt="" />
             </div>
             <div className='flex justify-center'>
 
@@ -185,7 +143,7 @@ const Header = () => {
 
 
 
-          
+
 
 
         </>

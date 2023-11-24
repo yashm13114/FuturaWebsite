@@ -11,6 +11,7 @@ import Clients from "./components/Clients";
 import Contactus from "./components/Contactus";
 import Home from "./components/Home";
 import Services from "./components/Services";
+import About from "./components/About";
 
 
 
@@ -21,16 +22,17 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <BrowserRouter>
         <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
           <Route path="/header" element={<Header />} />
         
           <Route path="/Footer" element={<Footer />} />
           <Route path="/Clients" element={<Clients />} />
           <Route path="/Contactus" element={<Contactus />} />
           <Route path="/Services" element={<Services />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </BrowserRouter>
 
